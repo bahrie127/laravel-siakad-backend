@@ -23,7 +23,7 @@ Route::middleware(['auth'])->group(function () {
     })->name('home');
     
 });
-
+//tes
 // Route::get('/', function () {
 //     return view('pages.app.dashboard-siakad',['type_menu' =>''  ]);
 // })->name('dashboard');
