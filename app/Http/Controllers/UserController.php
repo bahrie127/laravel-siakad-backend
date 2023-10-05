@@ -53,7 +53,8 @@ class UserController extends Controller
             'phone' => $request['phone'],
             'address' => $request['address'],
         ]);
-        return redirect(route('user.index'))->with('success','New User Successfully');
+        alert()->success('Success !','Post Add Successfully');
+        return redirect(route('user.index'));
     }
 
     /**
