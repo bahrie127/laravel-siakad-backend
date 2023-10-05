@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
         name="viewport">
-    <title>@yield('title') &mdash; Stisla</title>
+
+    <title>@yield('title') | Siakad</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet"
@@ -26,7 +27,7 @@
 
     <!-- Start GA -->
     <script async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+        src="https://www.googletagmanager.com/gtag/js?id="></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -35,7 +36,7 @@
         }
         gtag('js', new Date());
 
-        gtag('config', 'UA-94034622-3');
+        gtag('config', '');
     </script>
     <!-- END GA -->
 </head>
@@ -46,7 +47,7 @@
         <div class="main-wrapper">
             <!-- Header -->
             @include('components.header')
-
+            @include('sweetalert::alert')
             <!-- Sidebar -->
             @include('components.sidebar')
 
